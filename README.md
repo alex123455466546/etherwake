@@ -15,25 +15,6 @@ It needs a keyboard and mouse. Progress and settings save automatically. The con
 
 Saves for the Windows app live in `%LOCALAPPDATA%\Etherwake`. To remove the game completely, delete the exe and that folder.
 
-## Building it yourself
-
-You need Node.js. The game is plain JavaScript in `src/`, and one command joins it into a single page:
-
-```
-npm install
-node tools/build.mjs --release
-```
-
-That writes `dist/Etherwake.html` and `dist/music/spaceify.webm`.
-
-For the Windows app you also need Visual Studio 2022 or later, or the free Build Tools, with the **Desktop development with C++** workload. Then run:
-
-```
-powershell -ExecutionPolicy Bypass -File desktop\build.ps1
-```
-
-The result is `desktop\build\Etherwake.exe`. The script downloads Microsoft's WebView2 SDK from NuGet the first time, at a pinned version checked against its SHA-256.
-
 ## Licences
 
 The game is © Alex's Studio, all rights reserved (see `LICENSE`). The soundtrack, "Spaceify", was made for Etherwake. The game font is Atkinson Hyperlegible by the Braille Institute of America, under the SIL Open Font License (`licenses/Atkinson-Hyperlegible-OFL.txt`).
