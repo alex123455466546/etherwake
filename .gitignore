@@ -1,0 +1,5 @@
+node_modules/
+dist/
+desktop/build/
+index.html
+data.json
